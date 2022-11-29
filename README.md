@@ -46,3 +46,12 @@
   __webpack_require__("./src/index.js");
 })();
 ```
+
+## commonjs 文件引用 esm 文件
+
+- webpack 会将 esm 文件编译成 cjs 文件
+- `__webpack_require__.r` : 用来标识这个文件是 esModule 类型的
+- `__webpack_require__.d` : 用来定义 exports 的属性
+- `__webpack_require__.o` : hasOwnProperty 方法
+
+调用`__webpack_require__.d`，传入的`definition` 是包含了 `default` 和其他`export`属性的`get`方法。

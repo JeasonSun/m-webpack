@@ -8,6 +8,7 @@ module.exports = {
   output: {
     path: resolve(__dirname, "dist"),
     filename: "[name].[hash:8].js",
+    clean: true
   },
   plugins: [new HtmlWebpackPlugin()],
 };
