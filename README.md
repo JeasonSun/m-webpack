@@ -55,3 +55,17 @@
 - `__webpack_require__.o` : hasOwnProperty 方法
 
 调用`__webpack_require__.d`，传入的`definition` 是包含了 `default` 和其他`export`属性的`get`方法。
+
+## esm load esm
+
+## esm load commonjs
+
+- `__webpack_require__.n`
+
+```javascript
+function __webpack_require__() {}
+__webpack_require__.n = (exports) => {
+  var getter = exports.__esModule ? () => exports.default : exports;
+  return getter;
+};
+```
