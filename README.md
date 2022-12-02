@@ -79,3 +79,6 @@ __webpack_require__.n = (exports) => {
 - esprima
 - estraverse
 - escodegen
+
+## Babel 
+### babel-plugin-transform-es2015-arrow-functions
