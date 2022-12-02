@@ -69,3 +69,13 @@ __webpack_require__.n = (exports) => {
   return getter;
 };
 ```
+
+## lazy load
+
+# AST
+
+## AST 的基本流程
+
+- esprima
+- estraverse
+- escodegen
