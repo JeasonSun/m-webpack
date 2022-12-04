@@ -1,3 +1,3 @@
-import(/* webpackChunkName:'lazy' */ "./lazy").then(({default: data}) => {
-  console.log(data);
-});
+import { flatten, concat } from "lodash";
+alert(flatten([1, [2, [3]]]));
+alert(concat([1], [2]));

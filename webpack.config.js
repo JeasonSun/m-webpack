@@ -1,8 +1,9 @@
 const { resolve } = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
+// const HtmlWebpackPlugin = require("html-webpack-plugin");
+const BabelPluginImport = require('./webpack-plugins/babel-plugin-import');
 module.exports = {
-  mode: 'development',
-  devtool:"source-map",
+  mode: "development",
+  devtool: "source-map",
   entry: {
     main: "./src/index.js",
   },
@@ -11,5 +12,27 @@ module.exports = {
     filename: "[name].js",
     clean: true,
   },
-  plugins: [new HtmlWebpackPlugin()],
+  module: {
+    rules: [
+      {
+        test: /.js$/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            plugins: [
+              [
+                BabelPluginImport,
+                // 'import',
+                {
+                  libraryName: "lodash",
+                  libraryDirectory: "fp",
+                },
+              ],
+            ],
+          },
+        },
+      },
+    ],
+  },
+  // plugins: [new HtmlWebpackPlugin()],
 };
