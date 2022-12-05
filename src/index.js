@@ -1,3 +1,3 @@
-import { flatten, concat } from "lodash";
-alert(flatten([1, [2, [3]]]));
-alert(concat([1], [2]));
+const title = require("./title");
+
+console.log(title.default);

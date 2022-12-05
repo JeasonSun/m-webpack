@@ -6,6 +6,7 @@ const DonePlugin = require("./plugins/done-plugin");
 module.exports = {
   mode: "development",
   devtool: "source-map",
+  context: process.cwd(),
   entry: {
     main: "./src/index.js",
   },
@@ -14,28 +15,18 @@ module.exports = {
     filename: "[name].js",
     clean: true,
   },
-  // module: {
-  //   rules: [
-  //     {
-  //       test: /.js$/,
-  //       use: {
-  //         loader: "babel-loader",
-  //         options: {
-  //           plugins: [
-  //             [
-  //               BabelPluginImport,
-  //               // 'import',
-  //               {
-  //                 libraryName: "lodash",
-  //                 libraryDirectory: "fp",
-  //               },
-  //             ],
-  //           ],
-  //         },
-  //       },
-  //     },
-  //   ],
-  // },
-  // plugins: [new HtmlWebpackPlugin()],
+  module: {
+    rules: [
+      {
+        test: /.js$/,
+        use: [
+          resolve(__dirname, "loaders", "logger1-loader.js"),
+          resolve(__dirname, "loaders", "logger2-loader.js"),
+          resolve(__dirname, "loaders", "logger3-loader.js"),
+          resolve(__dirname, "loaders", "logger4-loader.js"),
+        ],
+      },
+    ],
+  },
   plugins: [new RunPlugin(), new DonePlugin()],
 };

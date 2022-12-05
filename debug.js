@@ -1,7 +1,7 @@
 // const webpack = require("webpack");
 const webpack = require("./webpack");
 const options = require("./webpack.config");
-debugger
+
 const compiler = webpack(options);
 
 // compiler.run((err, stat) => {
