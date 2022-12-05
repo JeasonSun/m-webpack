@@ -11,6 +11,7 @@ specifiers:
   estraverse: ^5.3.0
   html-webpack-plugin: ^5.5.0
   lodash: ^4.17.21
+  tapable: ^2.2.1
   webpack: ^5.75.0
   webpack-cli: ^5.0.0
 
@@ -22,6 +23,7 @@ dependencies:
   estraverse: 5.3.0
   html-webpack-plugin: 5.5.0_webpack@5.75.0
   lodash: 4.17.21
+  tapable: 2.2.1
   webpack: 5.75.0_webpack-cli@5.0.0
   webpack-cli: 5.0.0_webpack@5.75.0
 

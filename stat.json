@@ -1,0 +1,626 @@
+{
+  "hash": "fa8a5cd475f84cb242d1",
+  "version": "5.75.0",
+  "time": 309,
+  "builtAt": 1670206463571,
+  "publicPath": "auto",
+  "outputPath": "/Users/mojie/study/mini-webpack/dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "main.js",
+      "size": 548840,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "related": {
+          "sourceMap": "main.js.map"
+        },
+        "size": 548840
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "main.js.map",
+          "size": 673455,
+          "emitted": false,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 673455
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "main"
+          ],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [
+            "main"
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 545477,
+      "sizes": {
+        "javascript": 544196,
+        "runtime": 1281
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.js"
+      ],
+      "auxiliaryFiles": [
+        "main.js.map"
+      ],
+      "hash": "0e15b46c2236370b8208",
+      "childrenByOrder": {},
+      "id": "main",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "./src/index.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 98,
+      "sizes": {
+        "javascript": 98
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mojie/study/mini-webpack/src/index.js",
+      "name": "./src/index.js",
+      "nameForCondition": "/Users/mojie/study/mini-webpack/src/index.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./src/index.js",
+      "issuerId": null,
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./src/index.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "layer": null,
+      "size": 544098,
+      "sizes": {
+        "javascript": 544098
+      },
+      "built": true,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "name": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "nameForCondition": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "/Users/mojie/study/mini-webpack/src/index.js",
+      "issuerName": "./src/index.js",
+      "issuerPath": [
+        {
+          "identifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "name": "./src/index.js",
+          "id": "./src/index.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+      "issuerId": "./src/index.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "439:50-57",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "439:62-78",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "439:82-89",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "module decorator",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "442:63-69",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "module decorator",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "442:74-80",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "module decorator",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "442:93-99",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "module": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "moduleName": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModule": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "17209:7-11",
+          "moduleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js",
+          "resolvedModuleId": "./node_modules/.pnpm/lodash@4.17.21/node_modules/lodash/lodash.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "resolvedModule": "./src/index.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "lodash",
+          "loc": "1:0-41",
+          "moduleId": "./src/index.js",
+          "resolvedModuleId": "./src/index.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "resolvedModule": "./src/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "lodash",
+          "loc": "2:6-13",
+          "moduleId": "./src/index.js",
+          "resolvedModuleId": "./src/index.js"
+        },
+        {
+          "moduleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "module": "./src/index.js",
+          "moduleName": "./src/index.js",
+          "resolvedModuleIdentifier": "/Users/mojie/study/mini-webpack/src/index.js",
+          "resolvedModule": "./src/index.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "lodash",
+          "loc": "3:6-12",
+          "moduleId": "./src/index.js",
+          "resolvedModuleId": "./src/index.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: this is used directly at 17209:7-11",
+        "CommonJS bailout: exports is used directly at 439:50-57",
+        "CommonJS bailout: exports is used directly at 439:82-89"
+      ],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 267,
+      "sizes": {
+        "runtime": 267
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/compat get default export",
+      "name": "webpack/runtime/compat get default export",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 221,
+      "sizes": {
+        "runtime": 221
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/global",
+      "name": "webpack/runtime/global",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "layer": null,
+      "size": 123,
+      "sizes": {
+        "runtime": 123
+      },
+      "built": false,
+      "codeGenerated": true,
+      "buildTimeExecuted": false,
+      "cached": false,
+      "identifier": "webpack/runtime/node module decorator",
+      "name": "webpack/runtime/node module decorator",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.js",
+          "size": 548840
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 548840,
+      "auxiliaryAssets": [
+        {
+          "name": "main.js.map",
+          "size": 673455
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 673455,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.js",
+          "size": 548840
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 548840,
+      "auxiliaryAssets": [
+        {
+          "name": "main.js.map",
+          "size": 673455
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 673455,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": []
+}

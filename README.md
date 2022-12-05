@@ -180,3 +180,10 @@ const TransformClassFunction = {
   },
 };
 ```
+
+# webpack的编译流程
+## 编译流程概述
+* 初始化参数： 从配置文件和shell语句中读取与合并参数，得到最终的配置对象。
+* 用上一步得到的配置对象初始化Compiler对象。
+* 加载所有配置的插件。
+* 执行compiler对象的run方法，开始执行编译。
