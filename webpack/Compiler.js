@@ -1,10 +1,14 @@
 const { SyncHook } = require("tapable");
-const { toUnixPath } = require("./utils");
+const { toUnixPath, tryExtensions } = require("./utils");
 const path = require("path");
 const fs = require("fs");
-
+const parser = require("@babel/parser");
+const traverse = require("@babel/traverse").default;
+const generator = require("@babel/generator").default;
+const types = require("babel-types");
 
 const baseDir = process.cwd();
+
 class Compiler {
   constructor(options) {
     this.options = options;
@@ -41,10 +45,7 @@ class Compiler {
     console.log(JSON.stringify(this.chunks, null, 2));
 
     this.chunks.forEach((chunk) => {
-      const outputFileName = this.options.output.filename.replace(
-        "[name]",
-        chunk.name
-      );
+      const outputFileName = this.options.output.filename.replace('[name]', chunk.name );
       this.assets[outputFileName] = getSource(chunk);
     });
     this.files = Object.keys(this.assets);
