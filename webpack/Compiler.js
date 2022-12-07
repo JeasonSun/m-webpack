@@ -14,6 +14,7 @@ class Compiler {
     this.options = options;
     this.hooks = {
       run: new SyncHook(),
+      emit: new SyncHook(),
       done: new SyncHook(),
     };
     this.entrypoints = {};
@@ -45,9 +46,13 @@ class Compiler {
     console.log(JSON.stringify(this.chunks, null, 2));
 
     this.chunks.forEach((chunk) => {
-      const outputFileName = this.options.output.filename.replace('[name]', chunk.name );
+      const outputFileName = this.options.output.filename.replace(
+        "[name]",
+        chunk.name
+      );
       this.assets[outputFileName] = getSource(chunk);
     });
+    this.hooks.emit.call();
     this.files = Object.keys(this.assets);
     for (let file in this.assets) {
       const targetPath = path.join(this.options.output.path, file);

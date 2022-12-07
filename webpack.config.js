@@ -3,12 +3,15 @@ const { resolve } = require("path");
 // const BabelPluginImport = require('./webpack-plugins/babel-plugin-import');
 const RunPlugin = require("./plugins/run-plugin");
 const DonePlugin = require("./plugins/done-plugin");
+const ReadmePlugin = require('./plugins/readme-plugin');
+
 module.exports = {
   mode: "development",
   devtool: "source-map",
   context: process.cwd(),
   entry: {
-    main: "./src/index.js",
+    "page1":"src/page1.js",
+    "page2":"src/page2.js",
   },
   output: {
     path: resolve(__dirname, "dist"),
@@ -31,5 +34,5 @@ module.exports = {
       },
     ],
   },
-  plugins: [new RunPlugin(), new DonePlugin()],
+  plugins: [new RunPlugin(), new DonePlugin(), new ReadmePlugin()],
 };
