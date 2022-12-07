@@ -8,14 +8,15 @@ module.exports = {
   devtool: "source-map",
   context: process.cwd(),
   entry: {
-    // main: "./src/index.js",
-    page1: './src/page1.js',
-    page2: './src/page2.js',
+    main: "./src/index.js",
   },
   output: {
     path: resolve(__dirname, "dist"),
     filename: "[name].js",
     clean: true,
+  },
+  resolve: {
+    extensions: ['.js', '.ts']
   },
   module: {
     rules: [
