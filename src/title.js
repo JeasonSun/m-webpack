@@ -1,3 +1,2 @@
-const title = "title_name";
-export default title;
-export const age = "title_age";
+const name = require("./name");
+module.exports = "hello " + name;

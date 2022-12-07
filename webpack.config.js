@@ -8,7 +8,9 @@ module.exports = {
   devtool: "source-map",
   context: process.cwd(),
   entry: {
-    main: "./src/index.js",
+    // main: "./src/index.js",
+    page1: './src/page1.js',
+    page2: './src/page2.js',
   },
   output: {
     path: resolve(__dirname, "dist"),
