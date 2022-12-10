@@ -195,3 +195,45 @@ const TransformClassFunction = {
 8. 根据入口和模块之间的依赖关系，组装成一个个包含多个模块的 chunk。
 9. 再把每个 chunk 转成一个单独的文件加入到输出列表。
 10. 在确定好输出内容后， 根据配置确定输出的路径和文件名， 把文件内容写入到文件系统。
+
+## loader
+
+### loader 的执行顺序
+
+- loader 的执行顺序依赖单独的包`loader-runner`来控制，整体的原则是从下往上，从右往左执行。
+- loader 可以分成四类：
+
+  - pre-loader
+  - normal-loader
+  - inline-loader
+  - post-loader
+
+![loader 的整体执行顺序](./docs/loader-runner.png)
+
+![loader-pitch](./docs/loader_pitch.jpeg)
+
+### 手写常见 loader
+
+#### babel-loader
+
+```js
+const core = require("@babel/core");
+function loader(source, inputSourceMap, data) {
+  const options = {
+    presets: ["@babel/preset-env"],
+    inputSourceMap,
+    sourceMaps: true,
+    filename: this.resourcePath,
+  };
+  const { code, ast, map } = core.transform(source, options);
+  this.callback(null, code, map, ast);
+}
+```
+
+#### file-loader
+
+#### url-loader
+
+#### less-loader
+
+#### style-loader
