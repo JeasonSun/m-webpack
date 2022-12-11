@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const RunPlugin = require("./plugins/run-plugin");
 const DonePlugin = require("./plugins/done-plugin");
 const ReadmePlugin = require("./plugins/readme-plugin");
+const AssetsPlugin = require("./plugins/assetsPlugin");
 
 module.exports = {
   mode: "development",
@@ -67,6 +68,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       publicPath: "/",
     }),
+    new AssetsPlugin(),
     // new RunPlugin(), new DonePlugin(), new ReadmePlugin()
   ],
 };
